@@ -52,6 +52,20 @@
 
 /**
  */
+#define _IMPL_LOGF_LVL_0        "[EMERG]"
+#define _IMPL_LOGF_LVL_1        "[FATAL]"
+#define _IMPL_LOGF_LVL_2        "[CRIT ]"
+#define _IMPL_LOGF_LVL_3        "[ERROR]"
+#define _IMPL_LOGF_LVL_4        "[WARN ]"
+#define _IMPL_LOGF_LVL_5        "[NOTIC]"
+#define _IMPL_LOGF_LVL_6        "[INFO ]"
+#define _IMPL_LOGF_LVL_7        "[DEBUG]"
+#define _IMPL_LOGF_LVL_8        "[TRACE]"
+
+#define _LOGF_LEVEL(level)      _IMPL_LOGF_LVL_ ## level
+
+/**
+ */
 namespace wstux {
 namespace logging {
 
